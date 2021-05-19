@@ -19,6 +19,7 @@ namespace API.Controllers
 
         }
 
+        //Asynchronus API calls
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
