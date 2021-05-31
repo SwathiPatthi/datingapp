@@ -1,0 +1,12 @@
+
+    <h1>Internal Server Error - refreshing the page to make the error disappear!</h1>
+    <button class="btn btn-info btn-lg" routerLink="/">Return to Home page</button>
+
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error:{{error.message}}</h5>
+</ng-container>
+
+<p>Following is the stack trace  - this is where your investigation should start!</p>
+<code class="mt-5" style="background-color: whitesmoke;"> 
+{{error.details}}
+</code>
